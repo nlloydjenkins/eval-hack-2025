@@ -7,9 +7,8 @@ from typing import TypedDict
 
 
 class ApplicationEndpoint:
-    def __init__(self: Self, env: dict) -> None:
-        self.env = env
-        print(self.env)
+    def __init__(self: Self) -> None:
+        print(self)
 
     class Response(TypedDict):
         query: str
