@@ -46,20 +46,4 @@
 3. **Role Assignment**:
 - Ensure you grant  "Storage Blob Data Contributor" and "Storage File Data Privileged Contributor" role to your credential with AI Foundry's storage Account.
 
-### Set up parameters
-1. **Create a `.env` File**  
-- Store your Azure OpenAI configuration, AI Foundry details, and application credentials in separate key-value pairs.
-```
-AZURE_OPENAI_API_VERSION=2024-08-01-preview
-AZURE_OPENAI_DEPLOYMENT=sample-deployment
-AZURE_OPENAI_ENDPOINT=https://sample-aoai-endpoint.azure.com/
-AZURE_OPENAI_KEY=sampleKey1234
-AZURE_SUBSCRIPTION_ID=sample-subscription-id
-AZURE_AI_FOUNDRY_RESOURCE_GROUP=sample-resource-group
-AZURE_AI_FOUNDRY_PROJECT_NAME=sample-project
-APPLICATION_ENDPOINT=https://sample-app-endpoint.azure.com/score
-APPLICATION_KEY=sampleApplicationKey1234
-```
 
-2. **Run `az login`**  
-   - Use the Azure CLI to authenticate your account.

@@ -6,6 +6,23 @@ Another challenge when working with Gen AI is having decent quality test data. G
 
 In this lab, you will learn how to run evaluators on manual data set, on an application target endpoint with built-in evaluators using the Azure AI Evaluation SDK then track the results and evaluation logs in Azure AI project. To extend the data set we will use AI Evaluation SDK to generate synthetic data set to enhance test coverage.
 
+## Set up parameters
+1. **Create a `.env` File under ApplicationEvaluation folder**  
+- Store your Azure OpenAI configuration, AI Foundry details, and application credentials in separate key-value pairs.
+```
+AZURE_OPENAI_API_VERSION=2024-08-01-preview
+AZURE_OPENAI_DEPLOYMENT=sample-deployment
+AZURE_OPENAI_ENDPOINT=https://sample-aoai-endpoint.azure.com/
+AZURE_OPENAI_KEY=sampleKey1234
+AZURE_SUBSCRIPTION_ID=sample-subscription-id
+AZURE_AI_FOUNDRY_RESOURCE_GROUP=sample-resource-group
+AZURE_AI_FOUNDRY_PROJECT_NAME=sample-project
+APPLICATION_ENDPOINT=https://sample-app-endpoint.azure.com/score
+APPLICATION_KEY=sampleApplicationKey1234
+```
+
+2. **Run `az login`**  
+   - Use the Azure CLI to authenticate your account.
 ![Application Eval Diagram](applicationeval.png)
 
 ## Lab
@@ -14,7 +31,7 @@ If you want to use your own application endpoint then it is also possible with t
 
 We have a set of note books for each scenario. Each notebook are independent from each other so you can choose to run 
 
-| Notebook                                        | Description                                              |
-|-------------------------------------------------|----------------------------------------------------------|
+| Notebook                                        | Description                                               |
+|-------------------------------------------------|-----------------------------------------------------------|
 |[Manual_Evaluation](Manual_Evaluation.ipynb)     | Application evaluation with golden data set               |
-|[Simulate_Evaluation](Simulate_Evaluation.ipynb) | Generate and evaluate application with generate data set |
+|[Simulate_Evaluation](Simulate_Evaluation.ipynb) | Generate and evaluate application with generate data set  |
