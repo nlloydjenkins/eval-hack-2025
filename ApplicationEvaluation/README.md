@@ -6,6 +6,8 @@ Another challenge when working with Gen AI is having decent quality test data. G
 
 In this lab, you will learn how to run evaluators on manual data set, on an application target endpoint with built-in evaluators using the Azure AI Evaluation SDK then track the results and evaluation logs in Azure AI project. To extend the data set we will use AI Evaluation SDK to generate synthetic data set to enhance test coverage.
 
+The application target endpoint will be provided. This is an RAG application that answer question related to[] Microsoft Responsible AI](Data/Microsoft-Responsible-AI-Standard-v2-General-Requirements-3.pdf) 
+
 ## Set up parameters
 1. **Create a `.env` File under ApplicationEvaluation folder**  
 - Store your Azure OpenAI configuration, AI Foundry details, and application credentials in separate key-value pairs.
@@ -17,8 +19,8 @@ AZURE_OPENAI_KEY=sampleKey1234
 AZURE_SUBSCRIPTION_ID=sample-subscription-id
 AZURE_AI_FOUNDRY_RESOURCE_GROUP=sample-resource-group
 AZURE_AI_FOUNDRY_PROJECT_NAME=sample-project
-APPLICATION_ENDPOINT=https://sample-app-endpoint.azure.com/score
-APPLICATION_KEY=sampleApplicationKey1234
+APPLICATION_ENDPOINT=https://sample-app-endpoint.azure.com/score # This will be provided via team channel
+APPLICATION_KEY=sampleApplicationKey1234 # This will be provided via team channel
 ```
 
 2. **Run `az login`**  
