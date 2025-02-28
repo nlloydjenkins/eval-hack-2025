@@ -13,6 +13,31 @@
 
 6. **Verify**: Once the container is running, verify that all necessary services are up and running inside the container.
 
+### Setting up with Python or Conda Environment 
+
+Create a virtual Python environment of you choice. 
+To create one using conda, run the following command in bash terminal
+```
+conda create -n model_eval
+conda activate model_eval
+```
+To create one using python in powershell, run the following command in powershell terminal
+```
+python -m venv model_eval
+.\model_eval\Scripts\Activate.ps1
+```
+To create one using python in bash, run the following command in bash terminal
+```
+python -m venv .model_eval
+source .model_eval/bin/activates
+```
+
+### Building and running
+
+Install the required packages by running the following command:
+```
+pip install -r requirements.txt
+```
 
 ### Setting up Azure OpenAI Instance
 
