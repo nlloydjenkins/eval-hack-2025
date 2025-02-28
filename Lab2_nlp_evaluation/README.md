@@ -16,6 +16,7 @@ This lab use a NLP-assited single aoai model endpoints for evaluation in nlp_eva
 
 ![Model evaluation using NLP-assisted metrics using LLM as a Judge](media/NLP_metrics.png)
 
+NLP results in AI Foundry
 ![NLP results in AI Foundry](media/nlp_assist_metrics.png)
 
 In addition, we expore multiple aoai models comparative evaluation framework in nlp_base_model_evaluators.ipynb to understand which model yields accurate results on quantitative metrics. The sample dataset we use in this excercise is nlp_data.jsonl and ai_data.jsonl.
