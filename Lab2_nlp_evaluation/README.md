@@ -15,8 +15,6 @@ Set up will be same as in Lab1
 ## Lab
 This lab use a NLP-assited single aoai model endpoints for evaluation in nlp_evaluators.ipynb. We use example ground-truth and response using your own model deployment to output a score. Explore the how the score changes on changing the responses and ground truth.
 
-
-```
 ![alt text](image.png)
 ![Model evaluation using NLP-assisted metrics using LLM as a Judge](media/NLP_metrics.png)
 
