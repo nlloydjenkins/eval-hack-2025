@@ -62,8 +62,6 @@ Class GroundednessProEvaluator: This is an experimental class, and may change at
  'groundedness_pro_reason': 'All Contents are grounded'}
 ```
 
-![Model evaluation using AI-assisted metrics using LLM as a Judge](NLP_metrics.png)
-
 In addition, we expore multiple aoai models comparative evaluation framework in evaluate_base_model_endpoint.ipynb to understand which model yields accurate results on qualitative metrics. The sample dataset we use in this excercise is ai_data.jsonl.
 
 We have a set of note books for each scenario. Each notebook are independent from each other so you can choose to run 
