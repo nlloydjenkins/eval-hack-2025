@@ -71,4 +71,7 @@ pip install -r requirements.txt
 3. **Role Assignment**:
 - Ensure you grant  "Storage Blob Data Contributor" and "Storage File Data Privileged Contributor" role to your credential with AI Foundry's storage Account.
 
+4. **Storage Account Key Access**
+- On the AI Foundry resource storage. Plesse enable storage account key access to allow storage access.
+![Storage account key](Lab1_ai_evaluation/media/storage_account_key.png)
 
