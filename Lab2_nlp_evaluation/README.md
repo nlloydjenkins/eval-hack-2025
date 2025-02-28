@@ -11,12 +11,12 @@ Reference-based metrics are used to compare generated text to a reference, the h
 
 Set up will be same as in Lab1
 
-
 ## Lab
 This lab use a NLP-assited single aoai model endpoints for evaluation in nlp_evaluators.ipynb. We use example ground-truth and response using your own model deployment to output a score. Explore the how the score changes on changing the responses and ground truth.
 
-![alt text](image.png)
 ![Model evaluation using NLP-assisted metrics using LLM as a Judge](media/NLP_metrics.png)
+
+![NLP results in AI Foundry](media/nlp_assist_metrics.png)
 
 In addition, we expore multiple aoai models comparative evaluation framework in nlp_base_model_evaluators.ipynb to understand which model yields accurate results on quantitative metrics. The sample dataset we use in this excercise is nlp_data.jsonl and ai_data.jsonl.
 
