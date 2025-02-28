@@ -62,7 +62,7 @@ Class GroundednessProEvaluator: This is an experimental class, and may change at
  'groundedness_pro_reason': 'All Contents are grounded'}
 ```
 
-![Model evaluation using AI-assisted metrics using LLM as a Judge](media/LLM_judge.png)
+![Model evaluation using AI-assisted metrics using LLM as a Judge](NLP_metrics.png)
 
 In addition, we expore multiple aoai models comparative evaluation framework in evaluate_base_model_endpoint.ipynb to understand which model yields accurate results on qualitative metrics. The sample dataset we use in this excercise is ai_data.jsonl.
 
@@ -71,4 +71,4 @@ We have a set of note books for each scenario. Each notebook are independent fro
 | Notebook                                        | Description                                               |
 |-------------------------------------------------|-----------------------------------------------------------|
 |[Single_Model_AI-assisted_Evaluation](ai_evaluation.ipynb)     | Prompt-based AI-assisted Groundedness evaluation using single model deployment|
-|[Multiple_Model_AI-assisted_Evaluation](evaluate_base_model_endpoint.ipynb) | Evaluate multiple models concurrently with the same prmpt and context using example curated dataset|
+|[Multiple_Model_AI-assisted_Evaluation](evaluate_base_model_endpoint.ipynb) | Evaluate multiple models concurrently with the same prompt and context using example curated dataset|
