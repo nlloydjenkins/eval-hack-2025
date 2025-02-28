@@ -25,5 +25,5 @@ We have a set of note books for each scenario. Each notebook are independent fro
 
 | Notebook                                        | Description                                               |
 |-------------------------------------------------|-----------------------------------------------------------|
-|[Single_Model_NLP_Evaluation](Lab2_nlp_evaluation/nlp_evaluators.ipynb)     | Prompt-based NLP-assisted evaluation using single model deployment|
-|[Multiple_Model_AI-assisted_Evaluation](evaluate_base_model_endpoint.ipynb) | Evaluate NLP metrics for multiple models concurrently with the same prompt and context using example curated dataset that |
+|[Single_Model_NLP_Evaluation](nlp_evaluators.ipynb)     | Prompt-based NLP-assisted evaluation using single model deployment|
+|[Multiple_Model_AI-assisted_Evaluation](nlp_base_model_evaluators.ipynb) | Evaluate NLP metrics for multiple models concurrently with the same prompt and context using example curated dataset that |
