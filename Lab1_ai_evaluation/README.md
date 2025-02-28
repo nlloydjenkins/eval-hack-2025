@@ -51,7 +51,7 @@ This involves assessing the different AOAI base model using same prompt for accu
 
 
 ## Lab
-This lab use a AI-assited single aoai model endpoints for evaluation for groundedness. we use Prompt-based groundedness using your own model deployment to output a score and an explanation for the score is currently supported in all regions.Effectively, the model is behaving as judge
+This lab use a AI-assited single aoai model endpoints for evaluation for groundedness in ai_evaluation.ipynb. We use Prompt-based groundedness using your own model deployment to output a score and an explanation for the score is currently supported in all regions.Effectively, the model is behaving as judge
 ```
 Class GroundednessProEvaluator: This is an experimental class, and may change at any time. Please see https://aka.ms/azuremlexperimental for more information.
 {'gpt_groundedness': 5.0,
@@ -64,10 +64,11 @@ Class GroundednessProEvaluator: This is an experimental class, and may change at
 
 ![Model evaluation using AI-assisted metrics using LLM as a Judge](media/LLM_judge.png)
 
+In addition, we expore multiple aoai models comparative evaluation framework in evaluate_base_model_endpoint.ipynb to understand which model yields accurate results on qualitative metrics. The sample dataset we use in this excercise is ai_data.jsonl.
 
 We have a set of note books for each scenario. Each notebook are independent from each other so you can choose to run 
 
 | Notebook                                        | Description                                               |
 |-------------------------------------------------|-----------------------------------------------------------|
 |[Single_Model_AI-assisted_Evaluation](ai_evaluation.ipynb)     | Prompt-based AI-assisted Groundedness evaluation using single model deployment|
-|[Multiple_Model_AI-assisted_Evaluation](evaluate_base_model_endpoint.ipynb) | Evaluate multiple model concurrantly with example curated dataset|
+|[Multiple_Model_AI-assisted_Evaluation](evaluate_base_model_endpoint.ipynb) | Evaluate multiple models concurrently with the same prmpt and context using example curated dataset|
