@@ -1,0 +1,18 @@
+{
+  "bleu.bleu_score": 0.27619794053763824,
+  "bleu.bleu_threshold": 0.5,
+  "gleu.gleu_score": 0.3484330484330484,
+  "gleu.gleu_threshold": 0.5,
+  "meteor.meteor_score": 0.7349908339274891,
+  "meteor.meteor_threshold": 0.5,
+  "rouge.rouge_precision": 0.6666666666666666,
+  "rouge.rouge_recall": 0.5321428571428571,
+  "rouge.rouge_f1_score": 0.5913715913715913,
+  "rouge.rouge_precision_threshold": 0.5,
+  "rouge.rouge_recall_threshold": 0.5,
+  "rouge.rouge_f1_score_threshold": 0.5,
+  "bleu.binary_aggregate": 0.0,
+  "gleu.binary_aggregate": 0.0,
+  "meteor.binary_aggregate": 1.0,
+  "rouge.binary_aggregate": 0.67
+}

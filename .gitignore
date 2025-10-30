@@ -1,1 +1,2 @@
-ApplicationEvaluation/.env
+.env
+.credentials.env

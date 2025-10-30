@@ -11,12 +11,20 @@ Evaluations are crucial for several reasons:
 Evaluating generative AI models presents unique challenges due to their dynamic and often creative outputs. Traditional evaluation methods might not fully capture the intricacies of generative models, necessitating more specialized approaches. As such, we provide AI-assisted evaluations which use machine learning techniques to augment the evaluation process. The choice of models for AI-assisted evaluation can significantly affect the results. Therefore, we recommend testing and comparing your evaluations with the supported GPT 3.5, GPT 4, or GPT4o model for your calculations.
 You have the flexibility to run evaluations with Azure either through the UI in Azure AI Foundry or programmatically with the Azure AI Evaluation SDK. Both tools provide access to a series of Performance & Quality and Risk & Safety metrics. However, programmatically, you also can create your own code-based and prompt-based custom evaluators, and also log your custom evaluators to your Azure AI project.
 
-Set up environmentals variables for Azure OpenAI models deployments associated keys in the credentials.env
+## Prerequisites
+**Important:** You must create an **Azure AI Foundry Hub** (not just a project) to use AI-assisted evaluators like `GroundednessProEvaluator`. 
+
+1. Go to [Azure AI Foundry](https://ai.azure.com)
+2. Create a new **Hub** (this provides the full Azure ML workspace infrastructure)
+3. Create a **Project** under the Hub
+4. Note the Hub's resource group and your project name
+
+Set up environmental variables for Azure OpenAI models deployments and associated keys in the credentials.env:
 ```
 AZURE_SUBSCRIPTION_ID=""
 AZURE_TENANT_ID=""
-AZURE_RESOURCE_GROUP=""
-AZURE_PROJECT_NAME="" ## Create a project and hub in AI Foundry
+AZURE_RESOURCE_GROUP=""  ## Resource group where your Hub is located
+AZURE_PROJECT_NAME=""     ## Your project name (e.g., "YourProject-Name")
 
 # AI assitant Judge (GPT4o prerferbaly as this most learned and accurate)
 AZURE_OPENAI_ENDPOINT=""

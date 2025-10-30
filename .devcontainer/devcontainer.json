@@ -12,9 +12,19 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"ms-toolsai.jupyter"
+				"ms-toolsai.jupyter",
+				"ms-python.python",
+				"ms-python.vscode-pylance"
 			]
 		}
+	},
+
+	// Create conda environment and install dependencies after container creation
+	"postCreateCommand": "bash -c 'conda create -n model_eval python=3.11 -y && source activate model_eval && pip install -r requirements.txt'",
+
+	// Set the default conda environment
+	"remoteEnv": {
+		"CONDA_DEFAULT_ENV": "model_eval"
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
